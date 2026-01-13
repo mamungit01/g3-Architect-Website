@@ -41,6 +41,7 @@
     font-size: 1.25rem;
     font-weight: 600;
 }
+/*  */
 
 main > section {
     margin-top: 130px;
@@ -110,6 +111,62 @@ main > section {
 .our-features .btn-primary {
     margin-top: 32px;
 }
+/* some efact related style */
+.fact-card {
+    border: 1px solid #ff900e;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 10px;
+}
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.facts-description {
+    max-width: 540px;
+    margin-bottom: 50px;
+    margin-top: 24px;
+}
+
+/* sponsor related style */
+
+.sponsors-info {
+    max-width: 540px;
+    margin: 50px auto;
+    align-items: center;
+    text-align: center;
+}
+.section-titel {
+    font-size: 45px;
+    /* width: 600px ; */
+    margin-bottom: 24px;
+}
+
+.Sponsor-campanies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.Sponsor-campanies img {
+    filter: grayscale(100%);
+}
 
 /* responsive media query */
 @media screen and (max-width: 570px) {
@@ -118,8 +175,18 @@ main > section {
     .teams {
         flex-direction: column;
     }
-    .team-img-container {
+    .team-img-container,
+    .facts-container,
+    .Sponsor-campanies {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .facts-container {
+        justify-items: center;
+        gap: 24px;
+    }
+    .Sponsor-campanies {
+        justify-items: center;
+        gap: 50px;
     }
     .our-features {
         /* padding: 20px; */
@@ -134,5 +201,11 @@ main > section {
     }
     .our-features {
         margin-left: 50px auto;
+    }
+    .Sponsor-campanies,
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
     }
 }

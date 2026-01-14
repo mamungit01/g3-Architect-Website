@@ -86,6 +86,34 @@ main > section {
 .banner-image {
     width: 100%;
 }
+/* features related section start */
+
+#features-section-titel{
+   border-left: 5px solid #FF900E ;
+   padding-left: 20px ;
+}
+.features{
+    gap: 140px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.Feature-card{
+    padding: 30px;
+    /* width: 580px;
+    height: 171px; */
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px ;
+    border-radius: 8px;
+    /* gap: 10px ; */
+}
+.Feature-card .Feature-titel{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 /* feature related styles */
 
